@@ -1,0 +1,63 @@
+# setter property in prototype
+snippet set
+	set ${1:name}(val) {
+		${2:variable} = val;
+	},
+# getter property in prototype
+snippet get
+	get ${1:name}() {
+		return ${2:variable};
+	},
+# getter & setter in prototype
+snippet getset
+	get ${1:name}() {
+		return ${2:variable};
+	},
+	set $1(val) {
+		$2 = val;
+	},
+# Sylvester Vector
+snippet $V
+	$V([${1}, ${2}, ${3}])${4}
+# jasmine it block
+snippet it
+	it("${1}", function () {
+	});
+# jasmine beforeEach block
+snippet before
+	beforeEach(function() {
+	});
+# jasmine describe block
+snippet desc
+	describe("${1:something}", function() {
+	});
+snippet each
+	each(function(${1}) {
+	});
+snippet exp
+	expect(${1}).${2} 
+snippet ang
+	angular.module("${1}").
+snippet cont
+	controller('${1}', function($scope${2}) {
+	  ${3}
+	});
+snippet fact
+	factory('${1}', function() {
+	  ${2}
+	});
+snippet resource
+	resource('${1}', function($resource) {  
+		var ${1} = $resource('${2}', { id: '@id' }, { ${3} }); 
+	})
+snippet state
+	state('${1}', {
+		'url': '${2}',
+		'templateUrl': '${3}',
+		'resolve': ${4}
+	})
+snippet cli
+	console.info(${1})
+snippet cle
+	console.error(${1})
+
