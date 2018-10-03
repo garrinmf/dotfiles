@@ -1,5 +1,6 @@
 source $HOME/.vim/config/init.vimrc
 source $HOME/.vim/config/deoplete.vimrc
+source $HOME/.vim/config/ultisnipets.vimrc
 
 " fix for deoplete/vim-autoclose
 " https://github.com/Shougo/deoplete.nvim/issues/386

@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 # files to source in priority
 source ~/.oh_my.zsh
 

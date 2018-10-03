@@ -10,7 +10,7 @@ Plug 'jgdavey/tslime.vim'
 " All For snipmate
 Plug 'tomtom/tlib_vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'garbas/vim-snipmate'
+Plug 'SirVer/ultisnips'
 " + more snippets
 Plug 'honza/vim-snippets'
 
@@ -19,7 +19,7 @@ Plug 'w0rp/ale'
 " AutoComplete
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'roxma/nvim-yarp'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Random Tools
 Plug 'wesQ3/vim-windowswap'
