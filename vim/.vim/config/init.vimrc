@@ -46,6 +46,9 @@ Plug 'leafgarland/typescript-vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 
+" Elm
+Plug 'elmcast/elm-vim'
+
 " Git
 Plug 'tpope/vim-fugitive'
 
