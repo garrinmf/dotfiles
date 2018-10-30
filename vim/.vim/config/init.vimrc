@@ -30,6 +30,7 @@ Plug 'tpope/vim-unimpaired'
 
 " HTML
 Plug 'mattn/emmet-vim'
+Plug 'Valloric/MatchTagAlways'
 
 " Jenkins
 Plug 'martinda/Jenkinsfile-vim-syntax'
