@@ -16,10 +16,11 @@ Plug 'honza/vim-snippets'
 
 " Linting
 Plug 'w0rp/ale'
+
 " AutoComplete
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'roxma/nvim-yarp'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim'
 
 " Random Tools
 Plug 'wesQ3/vim-windowswap'
@@ -42,6 +43,7 @@ Plug 'pangloss/vim-javascript'
 " Typescript
 Plug 'Quramy/tsuquyomi'
 Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 
 " Elixir
 Plug 'elixir-editors/vim-elixir'
@@ -56,6 +58,7 @@ Plug 'tpope/vim-fugitive'
 " Ruby/Rails
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'ruby-formatter/rufo-vim'
 
 " Markdown
 Plug 'suan/vim-instant-markdown'

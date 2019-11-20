@@ -13,6 +13,16 @@ set re=1
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
+" ale
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_linters = {
+" \  'typescript': ['tslint']
+" \ }
+" let g:ale_linters_explicit = 1
+
+nnoremap <space>l :ALENext<CR>
+nnoremap <space>p :ALEPrevious<CR>
+
 " UTF-8 All the way
 scriptencoding utf-8
 filetype plugin indent on
@@ -158,3 +168,20 @@ map <Leader>j !python -m json.tool<CR>
 
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+set ballooneval
+autocmd FileType typescript setlocal balloonexpr=tsuquyomi#balloonexpr()
+
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+let g:jsx_ext_required = 0
+let g:user_emmet_settings = {
+\ 'typescript.tsx' : {
+\     'extends' : 'jsx',
+\ },
+\ 'javascript' : {
+\     'extends' : 'jsx',
+\ },
+\}
+
+let g:alchemist#elixir_erlang_src = "/Users/garrinmf/.elixir_erlang_src"

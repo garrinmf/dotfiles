@@ -19,9 +19,15 @@ snippet getset
 # Sylvester Vector
 snippet $V
 	$V([${1}, ${2}, ${3}])${4}
-# jasmine it block
-snippet it
+# it bblock with function
+snippet itf
 	it("${1}", function () {
+	  ${2}
+	});
+# it bblock with stabby
+snippet its
+	it("${1}", () => {
+	  ${2}
 	});
 # jasmine beforeEach block
 snippet before
@@ -35,7 +41,7 @@ snippet each
 	each(function(${1}) {
 	});
 snippet exp
-	expect(${1}).${2} 
+	expect(${1}).${2}
 snippet ang
 	angular.module("${1}").
 snippet cont
@@ -47,8 +53,8 @@ snippet fact
 	  ${2}
 	});
 snippet resource
-	resource('${1}', function($resource) {  
-		var ${1} = $resource('${2}', { id: '@id' }, { ${3} }); 
+	resource('${1}', function($resource) {
+		var ${1} = $resource('${2}', { id: '@id' }, { ${3} });
 	})
 snippet state
 	state('${1}', {
